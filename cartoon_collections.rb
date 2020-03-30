@@ -18,11 +18,13 @@ def long_planeteer_calls(array)
 end
 ###################33
 #The find_the_cheese method should accept an array of strings.
-#It should then look through these strings to find and return the first string that is a type of cheese.
+#It should then look through these strings to find and return the FIRST string that is a type of cheese.
 def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.find { |cheese| cheese_types.include?(cheese)}
+#array.select{} will go through all elements in the array looking those which match the condition.
+#array.find instead will return the first element that match the condition
 end
 
 =begin
